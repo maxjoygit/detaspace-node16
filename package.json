@@ -1,0 +1,23 @@
+{
+  "name": "deta.spcae",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node dist/app.js",
+    "run": "node dist/app.js",
+    "dev": "nodemon -e js,ejs,css src/app.js",
+    "build": "esbuild --bundle --outfile=./dist/app.js --platform=node --target=node16 ./src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "esbuild": "^0.20.2",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0"
+  }
+}
